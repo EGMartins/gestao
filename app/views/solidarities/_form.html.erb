@@ -1,0 +1,33 @@
+<%= form_for(@solidarity) do |f| %>
+  <% if @solidarity.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@solidarity.errors.count, "error") %> prohibited this solidarity from being saved:</h2>
+
+      <ul>
+      <% @solidarity.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :money %><br>
+    <%= f.text_field :money %>
+  </div>
+  <div class="field">
+    <%= f.label :card %><br>
+    <%= f.text_field :card %>
+  </div>
+  <div class="field">
+    <%= f.label :recipe_id %><br>
+    <%= f.text_field :recipe_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,39 @@
+"pt-BR":
+  activerecord:
+    models:
+      recipe:     Receita
+      expense:    Despesa
+      solidarity: Carnê Solidário
+    attributes:
+      recipe:
+        date:           Data
+        canteen:        Cantina
+        canteen_card:   Cartão
+        canteen_money:  Dinheiro
+        store:          Loja
+        store_card:     Cartão
+        store_money:    Dinheiro
+        raffle:         Rifa
+        raffle_card:    Cartão
+        raffle_money:   Dinheiro
+        donation:       Doação
+        donation_card:  Cartão
+        donation_money: Dinheiro
+      expense:
+        date:                     Data
+        energy:                   Energia
+        wather:                   Água
+        for_rent:                 Aluguel
+        internet:                 Internet
+        phone:                    Telefone
+        safety:                   Segurança
+        store:                    Loja
+        donation:                 Doação
+        cleaning:                 Limpeza
+        hp:                       Hospital do Perispírito
+        bazaar:                   Bazar
+        stationary:               Estacionamento
+        cost_with_consultants:    Gasto com Consulentes
+        healing_house:            Casa da Cura
+        food:                     Alimentação
+        

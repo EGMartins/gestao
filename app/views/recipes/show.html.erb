@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @recipe.date %>
+</p>
+
+<p>
+  <strong>Canteen money:</strong>
+  <%= @recipe.canteen_money %>
+</p>
+
+<p>
+  <strong>Canteen card:</strong>
+  <%= @recipe.canteen_card %>
+</p>
+
+<p>
+  <strong>Store money:</strong>
+  <%= @recipe.store_money %>
+</p>
+
+<p>
+  <strong>Store card:</strong>
+  <%= @recipe.store_card %>
+</p>
+
+<p>
+  <strong>Raffle money:</strong>
+  <%= @recipe.raffle_money %>
+</p>
+
+<p>
+  <strong>Raffle card:</strong>
+  <%= @recipe.raffle_card %>
+</p>
+
+<p>
+  <strong>Donation money:</strong>
+  <%= @recipe.donation_money %>
+</p>
+
+<p>
+  <strong>Donation card:</strong>
+  <%= @recipe.donation_card %>
+</p>
+
+<%= link_to 'Edit', edit_recipe_path(@recipe) %> |
+<%= link_to 'Back', recipes_path %>

@@ -1,0 +1,16 @@
+<div class= "container">
+  <h1>Relatório das Receitas</h1>
+
+  <div class="field">
+    <%= "Data inicial" %>
+    <%= text_field(recipes_url, :primary_parameter) %>
+    
+    <%= "Data Final" %>
+    <%= text_field(:second_parameter, "Data Final") %>
+  </div>
+  
+  <p>
+    <%= link_to 'Gerar', "", class: "button" %>
+    <%= link_to 'Voltar', report_index_report_url, class: "button" %>
+  </p>
+</div>

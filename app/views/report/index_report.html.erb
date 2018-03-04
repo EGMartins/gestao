@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Relatório</h1>
+  <p>Ferramenta criada para geração de relátorios de conferência. Para utilizar
+  selecione a opção desejada (Receita ou Despesa), após informe o período
+  e clique em gerar.</p>
+  
+  <p>
+    <%= link_to 'Receita', report_recipe_view_url, class: "button" %>
+    <%= link_to 'Despesa', report_expense_view_url, class: "button" %>
+  </p>
+  <p>
+    <%= link_to 'Voltar', home_index_url %>
+  </p>
+</div>

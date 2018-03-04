@@ -1,0 +1,60 @@
+<div class="container">
+  <p id="notice"><%= notice %></p>
+  
+  <h1>Despesa</h1>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Data</th>
+        <th>Energia</th>
+        <th>Água</th>
+        <th>Aluguel</th>
+        <th>Internet</th>
+        <th>Telefone</th>
+        <th>Segurança</th>
+        <th>Loja</th>
+        <th>Doação</th>
+        <th>Limpeza</th>
+        <th>Hospital do Perispírito</th>
+        <th>Bazar</th>
+        <th>Estacionamento</th>
+        <th>Gasto com Consulentes</th>
+        <th>Casa da Cura</th>
+        <th>Alimentação</th>
+        <th colspan="3">Opção</th>
+      </tr>
+    </thead>
+  
+    <tbody>
+      <% @expenses.each do |expense| %>
+        <tr>
+          <td><%= expense.date %></td>
+          <td><%= expense.energy %></td>
+          <td><%= expense.wather %></td>
+          <td><%= expense.for_rent %></td>
+          <td><%= expense.internet %></td>
+          <td><%= expense.phone %></td>
+          <td><%= expense.safety %></td>
+          <td><%= expense.store %></td>
+          <td><%= expense.donation %></td>
+          <td><%= expense.cleaning %></td>
+          <td><%= expense.hp %></td>
+          <td><%= expense.bazaar %></td>
+          <td><%= expense.stationary %></td>
+          <td><%= expense.cost_with_consultants %></td>
+          <td><%= expense.healing_house %></td>
+          <td><%= expense.food %></td>
+          <td><%= link_to 'Show', expense %></td>
+          <td><%= link_to 'Edit', edit_expense_path(expense) %></td>
+          <td><%= link_to 'Destroy', expense, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  
+  <br>
+  
+  <%= link_to 'Novo', new_expense_path, class: "button" %>
+  <%= link_to 'Voltar', home_closure_view_url, class: "button" %>
+</div>

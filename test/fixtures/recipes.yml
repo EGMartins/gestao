@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: MyString
+  canteen_money: 9.99
+  canteen_card: 9.99
+  store_money: 9.99
+  store_card: 9.99
+  raffle_money: 9.99
+  raffle_card: 9.99
+  donation_money: 9.99
+  donation_card: 9.99
+
+two:
+  date: MyString
+  canteen_money: 9.99
+  canteen_card: 9.99
+  store_money: 9.99
+  store_card: 9.99
+  raffle_money: 9.99
+  raffle_card: 9.99
+  donation_money: 9.99
+  donation_card: 9.99

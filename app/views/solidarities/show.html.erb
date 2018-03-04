@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @solidarity.name %>
+</p>
+
+<p>
+  <strong>Money:</strong>
+  <%= @solidarity.money %>
+</p>
+
+<p>
+  <strong>Card:</strong>
+  <%= @solidarity.card %>
+</p>
+
+<p>
+  <strong>Recipe:</strong>
+  <%= @solidarity.recipe %>
+</p>
+
+<%= link_to 'Edit', edit_solidarity_path(@solidarity) %> |
+<%= link_to 'Back', solidarities_path %>

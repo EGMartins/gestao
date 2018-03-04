@@ -1,0 +1,2 @@
+module SolidaritiesHelper
+end

@@ -1,0 +1,15 @@
+<div class="nested-fields">
+   <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name, class: "name-field" %>
+  </div>
+  <div class="field">
+    <%= f.label :money %><br>
+    <%= f.text_field :money %>
+   </div>
+   <div class="field">
+     <%= f.label :card %><br>
+     <%= f.text_field :card %>
+  </div>
+  <%= link_to_remove_association('Remover', f)%>
+</div> 

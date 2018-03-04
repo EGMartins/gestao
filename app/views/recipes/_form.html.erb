@@ -1,0 +1,81 @@
+<%= form_for(@recipe, html: {class: "container"}) do |f| %>
+  <% if @recipe.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@recipe.errors.count, "error") %> prohibited this recipe from being saved:</h2>
+
+      <ul>
+      <% @recipe.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.text_field :date %>
+  </div>
+  
+  <div class=canteen>
+    <%= "Cantina" %>
+    <div class="field">
+      <%= f.label :canteen_money %><br>
+      <%= f.text_field :canteen_money %>
+    </div>
+    <div class="field">
+      <%= f.label :canteen_card %><br>
+      <%= f.text_field :canteen_card %>
+    </div>
+  </div>
+  
+  <div class="store">
+    <%= "Loja" %>
+    <div class="field">
+      <%= f.label :store_money %><br>
+      <%= f.text_field :store_money %>
+    </div>
+    <div class="field">
+      <%= f.label :store_card %><br>
+      <%= f.text_field :store_card %>
+    </div>
+  </div>
+  
+  <div class="raffle">
+    <%= "Rifa" %>
+    <div class="field">
+      <%= f.label :raffle_money %><br>
+      <%= f.text_field :raffle_money %>
+    </div>
+    <div class="field">
+      <%= f.label :raffle_card %><br>
+      <%= f.text_field :raffle_card %>
+    </div>
+  </div>
+  
+  <div class="donation">
+    <%= "Doação" %>
+    <div class="field">
+      <%= f.label :donation_money %><br>
+      <%= f.text_field :donation_money %>
+    </div>
+    <div class="field">
+      <%= f.label :donation_card %><br>
+      <%= f.text_field :donation_card %>
+    </div>
+  </div>
+  
+  <div class: "solidarities">
+    <h3><%= "Carnê Solidário" %></h3>
+    
+    <%= f.fields_for :solidarities do |solidarities_fields| %>
+      <%= render partial: "solidarity_fields", locals: { f: solidarities_fields } %>
+    <% end %>
+    
+    <%= link_to_add_association('[Adicionar Carnê]', f, :solidarities) %>
+    
+  </div>
+  <div class="actions">
+    <%= f.submit "Enviar", class: "button" %>
+    <%= link_to 'Voltar', recipes_path, class: "button" %>
+  </div>
+<% end %>
